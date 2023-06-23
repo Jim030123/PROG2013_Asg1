@@ -86,7 +86,6 @@ public class OnlineBookstore extends JFrame {
                 priceTF.setEditable(true);
                 quantityTF.setEditable(true);
                 weightTF.setEditable(true);
-                weightTF.setEditable(true);
                 fileformatTF.setEditable(false);
 
                 openbookB.setEnabled(false);
