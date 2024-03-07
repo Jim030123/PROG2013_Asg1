@@ -9,7 +9,7 @@ public class OnlineBookstore extends JFrame {
         initComponents();
     }
 
- // Declaration and show component on GUI
+    // Declaration and show component on GUI
     private JTextField priceTF = new JTextField();
     private JTextField quantityTF = new JTextField();
     private JTextField titleTF = new JTextField();
@@ -104,7 +104,7 @@ public class OnlineBookstore extends JFrame {
         ebookB.setBounds(50, 80, 130, 23);
         ebookB.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
-                
+
                 titleTF.setEditable(true);
                 authorTF.setEditable(true);
                 priceTF.setEditable(true);
@@ -234,7 +234,7 @@ public class OnlineBookstore extends JFrame {
     private void shippingcostBActionPerformed(java.awt.event.ActionEvent evt) {
         PhysicalBook physicalbook1 = physicalBookinfo();
         physicalbook1.calculateShippingCost();
-        JOptionPane.showMessageDialog(null, "Shipping Cost (RM): "+physicalbook1.calculateShippingCost(), "Action",
+        JOptionPane.showMessageDialog(null, "Shipping Cost (RM): " + physicalbook1.calculateShippingCost(), "Action",
                 JOptionPane.INFORMATION_MESSAGE);
     }
 
